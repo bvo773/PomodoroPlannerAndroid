@@ -1,0 +1,65 @@
+Git version control
+// Getting help
+$ git init
+$ git config --help
+$ git commit --help
+
+// Ignore files,directories
+touch .gitignore
+-> .project
+-> *.pyc
+
+// Levels of git
+see stages fixes          add files to track    commit -m
+                             in staging area    about changes
+Working Directory -------------- Staging Area ------------------ .git directory(Repository)
+
+$ git status             $ git add -A (all)    $ git commit -m
+                         $ git add .gitignore     "detailed mess"
+                         $ git reset           $ git log // to see all commits
+                         $ git status
+
+// Cloning a repo
+$ git clone <url> <where to clone>
+-> $ git clone ../local_repo.git .
+-> $ git clone <https:github...> .
+
+// information about the repo
+-> $ git remote -v
+-> $ git branch -a
+
+// Pushing Changes
+commit changes like we did previously
+$ git diff
+$ git status
+$ git add -A
+$ git commit -m "modified multiply function"
+
+then push
+$ git pull origin master
+$ git push origin master
+
+// Common Workflow
+create a branch for a desired feature
+$ git branch calc-divide
+$ git checkout calc-divide // check it out to work on it
+$ git branch  // see all local branches
+-> work on the your feature and then add, commit on the local branch and push it to the remote branch (for unit test)
+$ git add -A
+$ git commit -m "worked on divide function"
+$ git push -u origin calc-divide
+
+// Merge a branch ONLY if all tests pass in remote branch
+$ git checkout master //switch to master
+$ git pull origin master // pull changes from everyone
+$ git branch --merged // tells you the branches that merged
+$ git merge calc-divide // merge with the desire branch
+$ git push origin master
+
+// Deleting a branch when a feature is done
+$ git branch --merged
+$ git branch -d calc-divide // deleted branch locally
+# git push origin --delete calc-divide // delete branch remotely
+
+// force push to origingi
+$ git push --force origin

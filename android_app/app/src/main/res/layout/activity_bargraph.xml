@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/text_view_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X-Axis Label"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/text_view_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Y-Axis Label"
+        android:gravity="center"
+        android:padding="8dp" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Plant-a-Pomodoro</string>
+
+    <!--Sign In Activity Values-->
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">Sign Up</string>
+
+    <!--Sign Up Activity Values-->
+    <string name="str_name">Name</string>
+    <string name="str_email">Email</string>
+    <string name="btn_confirm">Sign Up</string>
+
+    <!--Menu String's name-->
+    <string name="str_menu_pomodoro_timer">Pomodoro Timer</string>
+    <string name="str_menu_pomodoro_planner">Pomodoro Planner</string>
+    <string name="str_menu_statistics">Statistics</string>
+    <string name="str_menu_connect_spotify">Connect to Spotify</string>
+
+
+    <!--Pomodoro Activity -->
+    <string name="btn_start_pause">Start/Pause</string>
+    <string name="btn_stop">Stop</string>
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="date">2/13/19</string>
+    <string name="quote_1">"If you spend too much time thinking about a thing, you'll never get it done." - Bruce Lee</string>
+
+    <string name="task_title_label">Title</string>
+    <string name="task_title_hint">Enter a title for the task...</string>
+    <string name="task_notes_hint">Enter notes for the task...</string>
+
+    <string name="task_notes_label">Notes</string>
+    <string name="task_solved_label">Done</string>
+
+</resources>
+
+
+
